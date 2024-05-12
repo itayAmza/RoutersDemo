@@ -1,0 +1,840 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E1C9F522BA2F09B00BC4C6C /* InboxNavigationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1C9F512BA2F09B00BC4C6C /* InboxNavigationProtocol.swift */; };
+		2E6C9FC62BCFEFFF00E5EB2D /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6C9FC52BCFEFFF00E5EB2D /* Color+Extensions.swift */; };
+		2E9F16EF2BA7287E004BB9E2 /* DeeplinkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9F16EE2BA7287E004BB9E2 /* DeeplinkManager.swift */; };
+		2EAE2C622B9DEAA100E04B01 /* RoutersDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE2C612B9DEAA100E04B01 /* RoutersDemoApp.swift */; };
+		2EAE2C642B9DEAA100E04B01 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE2C632B9DEAA100E04B01 /* ContentView.swift */; };
+		2EAE2C662B9DEAA200E04B01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EAE2C652B9DEAA200E04B01 /* Assets.xcassets */; };
+		2EAE2C6A2B9DEAA200E04B01 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EAE2C692B9DEAA200E04B01 /* Preview Assets.xcassets */; };
+		2EAE2C742B9DEAA200E04B01 /* RoutersDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE2C732B9DEAA200E04B01 /* RoutersDemoTests.swift */; };
+		2EAE2C7E2B9DEAA200E04B01 /* RoutersDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE2C7D2B9DEAA200E04B01 /* RoutersDemoUITests.swift */; };
+		2EAE2C802B9DEAA200E04B01 /* RoutersDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE2C7F2B9DEAA200E04B01 /* RoutersDemoUITestsLaunchTests.swift */; };
+		2EAE2C932B9DEC2700E04B01 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE2C922B9DEC2700E04B01 /* BaseRouter.swift */; };
+		2EAE2C952B9DEC7200E04B01 /* RouterDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE2C942B9DEC7200E04B01 /* RouterDestination.swift */; };
+		2EAE2C972B9DEC9C00E04B01 /* RouterDestinationDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE2C962B9DEC9C00E04B01 /* RouterDestinationDecoder.swift */; };
+		2EAE2C9A2B9DEE1300E04B01 /* CodingUserInfoKey+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE2C992B9DEE1300E04B01 /* CodingUserInfoKey+Extensions.swift */; };
+		2EAE2CA02B9DF0F700E04B01 /* TabA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE2C9F2B9DF0F700E04B01 /* TabA.swift */; };
+		2EAE2CA22B9DF10F00E04B01 /* TabC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE2CA12B9DF10F00E04B01 /* TabC.swift */; };
+		2EAE2CA42B9DF11D00E04B01 /* TabB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE2CA32B9DF11D00E04B01 /* TabB.swift */; };
+		2EAE2CA62B9DF12900E04B01 /* TabD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE2CA52B9DF12900E04B01 /* TabD.swift */; };
+		2EAE2CA82B9DF18C00E04B01 /* EnvironmentValues+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE2CA72B9DF18C00E04B01 /* EnvironmentValues+Extensions.swift */; };
+		2EAE2CAA2B9DFF3900E04B01 /* TabARouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE2CA92B9DFF3900E04B01 /* TabARouter.swift */; };
+		2EAE2CAC2B9DFFA200E04B01 /* TabCRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE2CAB2B9DFFA200E04B01 /* TabCRouter.swift */; };
+		2EAE2CAE2B9DFFB400E04B01 /* TabBRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE2CAD2B9DFFB400E04B01 /* TabBRouter.swift */; };
+		2EAE2CB02B9DFFCD00E04B01 /* TabDRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE2CAF2B9DFFCD00E04B01 /* TabDRouter.swift */; };
+		2EAE2CB22B9E03A700E04B01 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE2CB12B9E03A700E04B01 /* View+Extensions.swift */; };
+		2EAE2CB42B9E04F600E04B01 /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE2CB32B9E04F600E04B01 /* CGFloat+Extensions.swift */; };
+		2EAE2CB62B9E0B8B00E04B01 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE2CB52B9E0B8B00E04B01 /* AppRouter.swift */; };
+		2EAE2CB92B9E0FF000E04B01 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE2CB82B9E0FF000E04B01 /* InboxView.swift */; };
+		2EAE2CBB2B9E100700E04B01 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE2CBA2B9E100700E04B01 /* ChatView.swift */; };
+		2EAE2CBE2B9EE0CD00E04B01 /* TransportationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE2CBD2B9EE0CD00E04B01 /* TransportationView.swift */; };
+		2EAE2CC02B9EE32800E04B01 /* Font+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE2CBF2B9EE32800E04B01 /* Font+Extensions.swift */; };
+		2EAE2CC22B9F055600E04B01 /* PresentedSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE2CC12B9F055600E04B01 /* PresentedSheet.swift */; };
+		2EAE2CC52B9F080300E04B01 /* ViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE2CC42B9F080300E04B01 /* ViewOne.swift */; };
+		2EAE2CC72B9F081000E04B01 /* ViewTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAE2CC62B9F081000E04B01 /* ViewTwo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2EAE2C702B9DEAA200E04B01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2EAE2C562B9DEAA000E04B01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2EAE2C5D2B9DEAA000E04B01;
+			remoteInfo = RoutersDemo;
+		};
+		2EAE2C7A2B9DEAA200E04B01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2EAE2C562B9DEAA000E04B01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2EAE2C5D2B9DEAA000E04B01;
+			remoteInfo = RoutersDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E1C9F512BA2F09B00BC4C6C /* InboxNavigationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxNavigationProtocol.swift; sourceTree = "<group>"; };
+		2E6C9FC52BCFEFFF00E5EB2D /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		2E9F16EE2BA7287E004BB9E2 /* DeeplinkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkManager.swift; sourceTree = "<group>"; };
+		2EAE2C5E2B9DEAA000E04B01 /* RoutersDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoutersDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EAE2C612B9DEAA100E04B01 /* RoutersDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutersDemoApp.swift; sourceTree = "<group>"; };
+		2EAE2C632B9DEAA100E04B01 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2EAE2C652B9DEAA200E04B01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2EAE2C672B9DEAA200E04B01 /* RoutersDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RoutersDemo.entitlements; sourceTree = "<group>"; };
+		2EAE2C692B9DEAA200E04B01 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2EAE2C6F2B9DEAA200E04B01 /* RoutersDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoutersDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EAE2C732B9DEAA200E04B01 /* RoutersDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutersDemoTests.swift; sourceTree = "<group>"; };
+		2EAE2C792B9DEAA200E04B01 /* RoutersDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoutersDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EAE2C7D2B9DEAA200E04B01 /* RoutersDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutersDemoUITests.swift; sourceTree = "<group>"; };
+		2EAE2C7F2B9DEAA200E04B01 /* RoutersDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutersDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2EAE2C922B9DEC2700E04B01 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		2EAE2C942B9DEC7200E04B01 /* RouterDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterDestination.swift; sourceTree = "<group>"; };
+		2EAE2C962B9DEC9C00E04B01 /* RouterDestinationDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterDestinationDecoder.swift; sourceTree = "<group>"; };
+		2EAE2C992B9DEE1300E04B01 /* CodingUserInfoKey+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CodingUserInfoKey+Extensions.swift"; sourceTree = "<group>"; };
+		2EAE2C9F2B9DF0F700E04B01 /* TabA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabA.swift; sourceTree = "<group>"; };
+		2EAE2CA12B9DF10F00E04B01 /* TabC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabC.swift; sourceTree = "<group>"; };
+		2EAE2CA32B9DF11D00E04B01 /* TabB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabB.swift; sourceTree = "<group>"; };
+		2EAE2CA52B9DF12900E04B01 /* TabD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabD.swift; sourceTree = "<group>"; };
+		2EAE2CA72B9DF18C00E04B01 /* EnvironmentValues+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+Extensions.swift"; sourceTree = "<group>"; };
+		2EAE2CA92B9DFF3900E04B01 /* TabARouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabARouter.swift; sourceTree = "<group>"; };
+		2EAE2CAB2B9DFFA200E04B01 /* TabCRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCRouter.swift; sourceTree = "<group>"; };
+		2EAE2CAD2B9DFFB400E04B01 /* TabBRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBRouter.swift; sourceTree = "<group>"; };
+		2EAE2CAF2B9DFFCD00E04B01 /* TabDRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabDRouter.swift; sourceTree = "<group>"; };
+		2EAE2CB12B9E03A700E04B01 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		2EAE2CB32B9E04F600E04B01 /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
+		2EAE2CB52B9E0B8B00E04B01 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		2EAE2CB82B9E0FF000E04B01 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
+		2EAE2CBA2B9E100700E04B01 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		2EAE2CBD2B9EE0CD00E04B01 /* TransportationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportationView.swift; sourceTree = "<group>"; };
+		2EAE2CBF2B9EE32800E04B01 /* Font+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extensions.swift"; sourceTree = "<group>"; };
+		2EAE2CC12B9F055600E04B01 /* PresentedSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentedSheet.swift; sourceTree = "<group>"; };
+		2EAE2CC42B9F080300E04B01 /* ViewOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOne.swift; sourceTree = "<group>"; };
+		2EAE2CC62B9F081000E04B01 /* ViewTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTwo.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2EAE2C5B2B9DEAA000E04B01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EAE2C6C2B9DEAA200E04B01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EAE2C762B9DEAA200E04B01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E9F16ED2BA72869004BB9E2 /* DeeplinkManager */ = {
+			isa = PBXGroup;
+			children = (
+				2E9F16EE2BA7287E004BB9E2 /* DeeplinkManager.swift */,
+			);
+			path = DeeplinkManager;
+			sourceTree = "<group>";
+		};
+		2EAE2C552B9DEAA000E04B01 = {
+			isa = PBXGroup;
+			children = (
+				2EAE2C602B9DEAA100E04B01 /* RoutersDemo */,
+				2EAE2C722B9DEAA200E04B01 /* RoutersDemoTests */,
+				2EAE2C7C2B9DEAA200E04B01 /* RoutersDemoUITests */,
+				2EAE2C5F2B9DEAA000E04B01 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2EAE2C5F2B9DEAA000E04B01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2EAE2C5E2B9DEAA000E04B01 /* RoutersDemo.app */,
+				2EAE2C6F2B9DEAA200E04B01 /* RoutersDemoTests.xctest */,
+				2EAE2C792B9DEAA200E04B01 /* RoutersDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2EAE2C602B9DEAA100E04B01 /* RoutersDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2E9F16ED2BA72869004BB9E2 /* DeeplinkManager */,
+				2EAE2C982B9DEDBE00E04B01 /* Extensions */,
+				2EAE2C8C2B9DEB5500E04B01 /* Routers */,
+				2EAE2C8D2B9DEB6400E04B01 /* Views */,
+				2EAE2C612B9DEAA100E04B01 /* RoutersDemoApp.swift */,
+				2EAE2C652B9DEAA200E04B01 /* Assets.xcassets */,
+				2EAE2C672B9DEAA200E04B01 /* RoutersDemo.entitlements */,
+				2EAE2C682B9DEAA200E04B01 /* Preview Content */,
+			);
+			path = RoutersDemo;
+			sourceTree = "<group>";
+		};
+		2EAE2C682B9DEAA200E04B01 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2EAE2C692B9DEAA200E04B01 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2EAE2C722B9DEAA200E04B01 /* RoutersDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				2EAE2C732B9DEAA200E04B01 /* RoutersDemoTests.swift */,
+			);
+			path = RoutersDemoTests;
+			sourceTree = "<group>";
+		};
+		2EAE2C7C2B9DEAA200E04B01 /* RoutersDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2EAE2C7D2B9DEAA200E04B01 /* RoutersDemoUITests.swift */,
+				2EAE2C7F2B9DEAA200E04B01 /* RoutersDemoUITestsLaunchTests.swift */,
+			);
+			path = RoutersDemoUITests;
+			sourceTree = "<group>";
+		};
+		2EAE2C8C2B9DEB5500E04B01 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				2EAE2CB52B9E0B8B00E04B01 /* AppRouter.swift */,
+				2EAE2C922B9DEC2700E04B01 /* BaseRouter.swift */,
+				2EAE2CC12B9F055600E04B01 /* PresentedSheet.swift */,
+				2EAE2C942B9DEC7200E04B01 /* RouterDestination.swift */,
+				2EAE2C962B9DEC9C00E04B01 /* RouterDestinationDecoder.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		2EAE2C8D2B9DEB6400E04B01 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2EAE2C8E2B9DEB7C00E04B01 /* TabA */,
+				2EAE2C902B9DEB9300E04B01 /* TabB */,
+				2EAE2C8F2B9DEB8900E04B01 /* TabC */,
+				2EAE2C912B9DEBC800E04B01 /* TabD */,
+				2EAE2C632B9DEAA100E04B01 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2EAE2C8E2B9DEB7C00E04B01 /* TabA */ = {
+			isa = PBXGroup;
+			children = (
+				2EAE2C9B2B9DEE6F00E04B01 /* Router */,
+				2EAE2CC32B9F07E600E04B01 /* Views */,
+				2EAE2C9F2B9DF0F700E04B01 /* TabA.swift */,
+			);
+			path = TabA;
+			sourceTree = "<group>";
+		};
+		2EAE2C8F2B9DEB8900E04B01 /* TabC */ = {
+			isa = PBXGroup;
+			children = (
+				2EAE2C9C2B9DEE7C00E04B01 /* Router */,
+				2EAE2CB72B9E0FD100E04B01 /* Views */,
+				2EAE2CA12B9DF10F00E04B01 /* TabC.swift */,
+			);
+			path = TabC;
+			sourceTree = "<group>";
+		};
+		2EAE2C902B9DEB9300E04B01 /* TabB */ = {
+			isa = PBXGroup;
+			children = (
+				2EAE2C9D2B9DEE8B00E04B01 /* Router */,
+				2EAE2CBC2B9EDEE300E04B01 /* Views */,
+				2EAE2CA32B9DF11D00E04B01 /* TabB.swift */,
+			);
+			path = TabB;
+			sourceTree = "<group>";
+		};
+		2EAE2C912B9DEBC800E04B01 /* TabD */ = {
+			isa = PBXGroup;
+			children = (
+				2EAE2C9E2B9DEE9200E04B01 /* Router */,
+				2EAE2CA52B9DF12900E04B01 /* TabD.swift */,
+			);
+			path = TabD;
+			sourceTree = "<group>";
+		};
+		2EAE2C982B9DEDBE00E04B01 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2EAE2CB32B9E04F600E04B01 /* CGFloat+Extensions.swift */,
+				2EAE2C992B9DEE1300E04B01 /* CodingUserInfoKey+Extensions.swift */,
+				2E6C9FC52BCFEFFF00E5EB2D /* Color+Extensions.swift */,
+				2EAE2CA72B9DF18C00E04B01 /* EnvironmentValues+Extensions.swift */,
+				2EAE2CBF2B9EE32800E04B01 /* Font+Extensions.swift */,
+				2EAE2CB12B9E03A700E04B01 /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2EAE2C9B2B9DEE6F00E04B01 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2EAE2CA92B9DFF3900E04B01 /* TabARouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		2EAE2C9C2B9DEE7C00E04B01 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2EAE2CAB2B9DFFA200E04B01 /* TabCRouter.swift */,
+				2E1C9F512BA2F09B00BC4C6C /* InboxNavigationProtocol.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		2EAE2C9D2B9DEE8B00E04B01 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2EAE2CAD2B9DFFB400E04B01 /* TabBRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		2EAE2C9E2B9DEE9200E04B01 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2EAE2CAF2B9DFFCD00E04B01 /* TabDRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		2EAE2CB72B9E0FD100E04B01 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2EAE2CB82B9E0FF000E04B01 /* InboxView.swift */,
+				2EAE2CBA2B9E100700E04B01 /* ChatView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2EAE2CBC2B9EDEE300E04B01 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2EAE2CBD2B9EE0CD00E04B01 /* TransportationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2EAE2CC32B9F07E600E04B01 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2EAE2CC42B9F080300E04B01 /* ViewOne.swift */,
+				2EAE2CC62B9F081000E04B01 /* ViewTwo.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2EAE2C5D2B9DEAA000E04B01 /* RoutersDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EAE2C832B9DEAA200E04B01 /* Build configuration list for PBXNativeTarget "RoutersDemo" */;
+			buildPhases = (
+				2EAE2C5A2B9DEAA000E04B01 /* Sources */,
+				2EAE2C5B2B9DEAA000E04B01 /* Frameworks */,
+				2EAE2C5C2B9DEAA000E04B01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoutersDemo;
+			productName = RoutersDemo;
+			productReference = 2EAE2C5E2B9DEAA000E04B01 /* RoutersDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2EAE2C6E2B9DEAA200E04B01 /* RoutersDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EAE2C862B9DEAA200E04B01 /* Build configuration list for PBXNativeTarget "RoutersDemoTests" */;
+			buildPhases = (
+				2EAE2C6B2B9DEAA200E04B01 /* Sources */,
+				2EAE2C6C2B9DEAA200E04B01 /* Frameworks */,
+				2EAE2C6D2B9DEAA200E04B01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2EAE2C712B9DEAA200E04B01 /* PBXTargetDependency */,
+			);
+			name = RoutersDemoTests;
+			productName = RoutersDemoTests;
+			productReference = 2EAE2C6F2B9DEAA200E04B01 /* RoutersDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2EAE2C782B9DEAA200E04B01 /* RoutersDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EAE2C892B9DEAA200E04B01 /* Build configuration list for PBXNativeTarget "RoutersDemoUITests" */;
+			buildPhases = (
+				2EAE2C752B9DEAA200E04B01 /* Sources */,
+				2EAE2C762B9DEAA200E04B01 /* Frameworks */,
+				2EAE2C772B9DEAA200E04B01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2EAE2C7B2B9DEAA200E04B01 /* PBXTargetDependency */,
+			);
+			name = RoutersDemoUITests;
+			productName = RoutersDemoUITests;
+			productReference = 2EAE2C792B9DEAA200E04B01 /* RoutersDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2EAE2C562B9DEAA000E04B01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					2EAE2C5D2B9DEAA000E04B01 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					2EAE2C6E2B9DEAA200E04B01 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 2EAE2C5D2B9DEAA000E04B01;
+					};
+					2EAE2C782B9DEAA200E04B01 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 2EAE2C5D2B9DEAA000E04B01;
+					};
+				};
+			};
+			buildConfigurationList = 2EAE2C592B9DEAA000E04B01 /* Build configuration list for PBXProject "RoutersDemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2EAE2C552B9DEAA000E04B01;
+			productRefGroup = 2EAE2C5F2B9DEAA000E04B01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2EAE2C5D2B9DEAA000E04B01 /* RoutersDemo */,
+				2EAE2C6E2B9DEAA200E04B01 /* RoutersDemoTests */,
+				2EAE2C782B9DEAA200E04B01 /* RoutersDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2EAE2C5C2B9DEAA000E04B01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EAE2C6A2B9DEAA200E04B01 /* Preview Assets.xcassets in Resources */,
+				2EAE2C662B9DEAA200E04B01 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EAE2C6D2B9DEAA200E04B01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EAE2C772B9DEAA200E04B01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2EAE2C5A2B9DEAA000E04B01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EAE2C642B9DEAA100E04B01 /* ContentView.swift in Sources */,
+				2EAE2CBE2B9EE0CD00E04B01 /* TransportationView.swift in Sources */,
+				2EAE2CA82B9DF18C00E04B01 /* EnvironmentValues+Extensions.swift in Sources */,
+				2E9F16EF2BA7287E004BB9E2 /* DeeplinkManager.swift in Sources */,
+				2EAE2CBB2B9E100700E04B01 /* ChatView.swift in Sources */,
+				2EAE2CAC2B9DFFA200E04B01 /* TabCRouter.swift in Sources */,
+				2EAE2CC22B9F055600E04B01 /* PresentedSheet.swift in Sources */,
+				2EAE2C972B9DEC9C00E04B01 /* RouterDestinationDecoder.swift in Sources */,
+				2E1C9F522BA2F09B00BC4C6C /* InboxNavigationProtocol.swift in Sources */,
+				2EAE2CB02B9DFFCD00E04B01 /* TabDRouter.swift in Sources */,
+				2EAE2CAE2B9DFFB400E04B01 /* TabBRouter.swift in Sources */,
+				2E6C9FC62BCFEFFF00E5EB2D /* Color+Extensions.swift in Sources */,
+				2EAE2CB22B9E03A700E04B01 /* View+Extensions.swift in Sources */,
+				2EAE2C952B9DEC7200E04B01 /* RouterDestination.swift in Sources */,
+				2EAE2CC72B9F081000E04B01 /* ViewTwo.swift in Sources */,
+				2EAE2CC02B9EE32800E04B01 /* Font+Extensions.swift in Sources */,
+				2EAE2CB92B9E0FF000E04B01 /* InboxView.swift in Sources */,
+				2EAE2CA02B9DF0F700E04B01 /* TabA.swift in Sources */,
+				2EAE2C932B9DEC2700E04B01 /* BaseRouter.swift in Sources */,
+				2EAE2CA42B9DF11D00E04B01 /* TabB.swift in Sources */,
+				2EAE2C9A2B9DEE1300E04B01 /* CodingUserInfoKey+Extensions.swift in Sources */,
+				2EAE2CAA2B9DFF3900E04B01 /* TabARouter.swift in Sources */,
+				2EAE2CA22B9DF10F00E04B01 /* TabC.swift in Sources */,
+				2EAE2CB62B9E0B8B00E04B01 /* AppRouter.swift in Sources */,
+				2EAE2CB42B9E04F600E04B01 /* CGFloat+Extensions.swift in Sources */,
+				2EAE2CC52B9F080300E04B01 /* ViewOne.swift in Sources */,
+				2EAE2CA62B9DF12900E04B01 /* TabD.swift in Sources */,
+				2EAE2C622B9DEAA100E04B01 /* RoutersDemoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EAE2C6B2B9DEAA200E04B01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EAE2C742B9DEAA200E04B01 /* RoutersDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EAE2C752B9DEAA200E04B01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EAE2C802B9DEAA200E04B01 /* RoutersDemoUITestsLaunchTests.swift in Sources */,
+				2EAE2C7E2B9DEAA200E04B01 /* RoutersDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2EAE2C712B9DEAA200E04B01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2EAE2C5D2B9DEAA000E04B01 /* RoutersDemo */;
+			targetProxy = 2EAE2C702B9DEAA200E04B01 /* PBXContainerItemProxy */;
+		};
+		2EAE2C7B2B9DEAA200E04B01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2EAE2C5D2B9DEAA000E04B01 /* RoutersDemo */;
+			targetProxy = 2EAE2C7A2B9DEAA200E04B01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2EAE2C812B9DEAA200E04B01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2EAE2C822B9DEAA200E04B01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		2EAE2C842B9DEAA200E04B01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RoutersDemo/RoutersDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RoutersDemo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Fiverr.RoutersDemo.RoutersDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2EAE2C852B9DEAA200E04B01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RoutersDemo/RoutersDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RoutersDemo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Fiverr.RoutersDemo.RoutersDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		2EAE2C872B9DEAA200E04B01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Fiverr.RoutersDemo.RoutersDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoutersDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RoutersDemo";
+			};
+			name = Debug;
+		};
+		2EAE2C882B9DEAA200E04B01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Fiverr.RoutersDemo.RoutersDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoutersDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RoutersDemo";
+			};
+			name = Release;
+		};
+		2EAE2C8A2B9DEAA200E04B01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Fiverr.RoutersDemo.RoutersDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RoutersDemo;
+			};
+			name = Debug;
+		};
+		2EAE2C8B2B9DEAA200E04B01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Fiverr.RoutersDemo.RoutersDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RoutersDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2EAE2C592B9DEAA000E04B01 /* Build configuration list for PBXProject "RoutersDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EAE2C812B9DEAA200E04B01 /* Debug */,
+				2EAE2C822B9DEAA200E04B01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EAE2C832B9DEAA200E04B01 /* Build configuration list for PBXNativeTarget "RoutersDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EAE2C842B9DEAA200E04B01 /* Debug */,
+				2EAE2C852B9DEAA200E04B01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EAE2C862B9DEAA200E04B01 /* Build configuration list for PBXNativeTarget "RoutersDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EAE2C872B9DEAA200E04B01 /* Debug */,
+				2EAE2C882B9DEAA200E04B01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EAE2C892B9DEAA200E04B01 /* Build configuration list for PBXNativeTarget "RoutersDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EAE2C8A2B9DEAA200E04B01 /* Debug */,
+				2EAE2C8B2B9DEAA200E04B01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2EAE2C562B9DEAA000E04B01 /* Project object */;
+}
